@@ -1,0 +1,99 @@
+@media (max-width: 767px) {
+    .navbar-brand { display: none; }
+    ul.navbar-right li:hover{ 
+        background:   #cc66ff;
+        transition-property: background;
+        transition-duration: 1s;
+    }
+    .imagenInicio{
+        margin-top: 95px;
+    }
+    
+    .cuadro{
+        display: none;
+    } 
+   
+}
+
+@media (min-width: 768px) {
+  .navbar-brand2 {
+    display: none;
+  }
+  
+  li.dropdown-menu a{
+     background: blue ; 
+  }
+}
+
+
+@font-face{
+    font-family:Carrington;
+    src:url(fuentes/Carrington.ttf);
+    font-family: AguaFina;
+    src:url(fuentes/AguafinaScript-Regular.ttf);
+}
+   
+
+
+/*// Sección imagen con texto*/
+
+.section-divider {
+    z-index: 999;
+    width: 100%;
+    display: table;
+    max-height: 450px;
+    border-bottom: 2px solid #E6EAED;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    margin-top: 45px;
+
+
+    background-position: center top ;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-attachment: relative;
+    
+    text-align: center;
+}
+
+.textdivider h1 {
+	padding-top: 70px;
+	color: white;
+	font-size: 40px;
+}
+
+.textdivider p {
+	color: white;
+	font-size: 25px;
+}
+
+.divider1 {
+	background-image: url('../img//zapato5-2.jpg')
+}
+
+p.menuHorizontalProductos:hover{
+    
+    background: #449d44;
+    color: white;
+    
+    transition-property: background, color;
+        transition-duration: .5s;
+    
+}
+
+
+
+
