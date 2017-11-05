@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -35,86 +37,83 @@ and open the template in the editor.
     
     <body>
         
-        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" 
-             style=" z-index: 1; opacity: 0.8; background: #cc66ff; border: 0px; ">
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" 
+    style=" z-index: 1; opacity: 0.8; background: #cc66ff; border: 0px; ">
       
     <div class="container-fluid" style=" height: 80px; margin-top: 15px; ">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"                                  data-target=" #bs-example-navbar-collapse-1" >
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class="navbar-brand" href="index.html" style="color: white; font-family: cursive; font-size: 2.2EM; ">
+        <a class="navbar-brand" href="index.php" style="color: white; font-family: cursive; font-size: 1.5EM; ">
           <strong style=" letter-spacing: 2px; text-shadow: 2px 2px black;">
               FERRETI
           </strong>
         </a>
-        <a class="navbar-brand" href="index.html" style="color: white; font-family: cursive; font-size: 1EM; ">
-          <strong style="letter-spacing: 2px; margin-top: 30px; margin-left: -163px; position: absolute; text-shadow: 1px 1px black;">
+        <a class="navbar-brand" href="index.php" style="color: white; font-family: cursive; font-size: 1EM; ">
+          <strong style="letter-spacing: 2px; margin-top: 30px; margin-left: -120px; position: absolute; text-shadow: 1px 1px black;">
               Bs.As. - Milán
           </strong>
         </a>
         
-         <a class="navbar-brand2" href="index.html" style="color: white; font-family: cursive; font-size: 1.3EM; ">
+         <a class="navbar-brand2" href="index.php" style="color: white; font-family: cursive; font-size: 1.3EM; ">
           <strong style=" letter-spacing: 2px; margin-left: 15px; text-shadow: 2px 2px black;">
               FERRETI CALZADOS
           </strong>
         </a>
-        <a class="navbar-brand2" href="index.html" style="color: white; font-family: initial; font-size: 1EM; ">
+        <a class="navbar-brand2" href="index.php" style="color: white; font-family: initial; font-size: 1EM; ">
           <strong style="letter-spacing: 2px; margin-top: 30px; left: 15px; position: absolute; text-shadow: 1px 1px black;">
               Bs.As. - Milán
           </strong>
         </a>
         
     </div>
+
     
-     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style=" border: 0px; margin-top: 0px; ">
+    
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style=" 
+     border: 0px; margin-top: 0px; ">
         <ul class="nav navbar-nav navbar-right" style="background:#cc66ff;">
              
-        <li class="" style=" margin-left: 0px;" id="id">
-            <a href="index.html" style="color: white; font-family: AguaFina; ">
+        <li class="" style=" margin-left: -13px;" id="id">
+            <a href="index.php" style="color: white; font-family: AguaFina; ">
                 <strong class="hvr-buzz-out" style="font-size: 0.8em;">
                     HOME
                 </strong>
             </a>
         </li>
         
-        <li style=" margin-left: 0px;">
-            <a href="quienesSomos.html" style="color: white; font-family: AguaFina">
+        <li style=" margin-left: -13px;">
+            <a href="quienesSomos.php" style="color: white; font-family: AguaFina">
                 <strong class="hvr-buzz-out" style="font-size: 0.8em;">
-                    QUIENES SOMOS
+                    Nosotros
                 </strong>
             </a>
         </li>
         
-        <li style=" margin-left: 0px;">
-            <a href="descuentosYPromociones.html" style="color: white; font-family: AguaFina">
+        <li style=" margin-left: -13px;">
+            <a href="descuentosYPromociones.php" style="color: white; font-family: AguaFina">
                 <strong class="hvr-buzz-out" style="font-size: 0.8em;" >
-                    DESCUENTOS Y PROMOCIONES
+                    Descuentos
                 </strong>
             </a>
-        </li>
+        </li>        
         
-        <li style=" margin-left: 0px;">
-            <a href="#" style="color: white; font-family: AguaFina">
-                <strong class="hvr-buzz-out" style="font-size: 0.8em;" >
-                    REGISTRARSE
-                </strong>
-            </a>
-        </li>
         
-        <li class="dropdown">
+        <li class="" style=" margin-left: -13px;">
             <!-- en <a> pongo el background en gold !-->
-            <a href="#" style=" color: white;font-family: AguaFina" class="dropdown-toggle hvr-buzz-out" 
-               data-toggle="dropdown" role="button" aria-haspopup="true" >
+            <a href="zapatos.php" style=" color: white;font-family: AguaFina" class="hvr-buzz-out" 
+                role="button" aria-haspopup="true" >
               <strong style="font-size: 0.8em; ">
-                  PRODUCTOS
+                  Productos
               </strong> 
-              <span class="caret"></span>
+              
             </a>
+            <!-- 
             <ul class="dropdown-menu" >
               <li><a href="zapatos.html" style="color: black;">Zapatos</a></li>
               <li><a href="#" style="color: black;">Sandalias</a></li>
@@ -122,16 +121,59 @@ and open the template in the editor.
               <li><a href="#" style="color: black;">Botas</a></li>           
               <li><a href="#" style="color: black;">Promociones</a></li>
             </ul>
+            !-->
         </li>
         
-        <li style=" margin-left: 0px;">
-            <a href="contacto.html" style="color: white; font-family: AguaFina">
+        <li style=" margin-left: -13px;">
+            <a href="contacto.php" style="color: white; font-family: AguaFina">
                 <strong class="hvr-buzz-out" style="font-size: 0.8em;">
-                    CONSULTAS
+                    Consultas
+                </strong>
+            </a>
+        </li>
+
+        <li style=" margin-left: -13px;">
+            <a href="ingresar.php" style="color: white; font-family: AguaFina">
+                <strong class="hvr-buzz-out" style="font-size: 0.8em;" id="ingresar" >
+                    Ingresar
                 </strong>
             </a>
         </li>
         
+        
+        <?php        
+            
+            if(isset($_SESSION["log"])){
+                if($_SESSION["log"] == "autorizado"){               
+                    echo "<script>$('#ingresar').hide();</script>"  ;
+                    
+                    /*echo    '<li style=" margin-left: -13px;">'
+                              . '<a href="../controller/cerrar_sesion.php" style="color: white; font-family: AguaFina">'
+                                    . '<strong style="font-size: 0.8em;">'
+                                        . 'Cerrar sesión'
+                                    . '</strong>'
+                              . '</a>'
+                            . '</li>';*/
+                    
+                    echo    '<li class="dropdown" style="margin-left: -13px;">'
+                                .'<a class="dropdown-toggle" data-toggle="dropdown" '
+                                . 'style=" ; color: white" >'                               
+                                    .'<strong style="font-size: 0.8em;"; font-family: AguaFina">'
+                                        . 'Cuenta'
+                                    .'</strong>'
+                                .'</a>  '
+                                . '<ul class="dropdown-menu" >'
+                                    .'<li><a href="../controller/cerrar_sesion.php">Cerrar sesión</a></li>'
+                                    
+                                .'</ul>'
+                            .'</li>';
+                }
+                
+            }               
+               
+       ?>
+        
+         
         
       </ul>
         </div>
@@ -139,99 +181,11 @@ and open the template in the editor.
         
     </nav>
         
-        <img class="imagenInicio" src="../img/fondo-editado2.jpg" alt="fondo" style="width: 100%;">
+       
         
-<!--      Full Page Image Background Carousel Header 
-      <header id="myCarousel" class="carousel slide img-responsive" style="height: 700px;">       
-          
-         Indicators 
+    <img class="imagenInicio" src="../img/fondo-editado2.jpg" alt="fondo" style="width: 100%;">
         
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        !
-
-         Wrapper for Slides 
-        <div class="carousel-inner" style="">
-            
-            <div class="item active">
-                 Set the first background image using inline CSS below. 
-                <div class="fill" 
-                    style="background-image:url('img/fondo-editado2.jpg'); background-position-y: 0px;">                         
-                </div>
-                
-                
-                 
-                <div class="carousel-caption" style="margin-bottom: 350px;margin-left: -150px; text-align: left;">
-                    <p style="font-size: 4.5em; color: wheat; font-family: Bookman Old Style; text-shadow: 1px 1px black; ; letter-spacing: 2px;" class="fuente">
-                        Ferretti
-                    </p>
-                    <p style="font-size: 1.5em; color: wheat; text-shadow: 1px 1px black; font-family: Elsie; font-weight: bold; ">
-                        Calzados para damas, talles especiales.
-                    </p>
-                    
-                    <a href="#nuestrosProductos" >
-                    <img class="center-block"  src="iconos/arrow-down-5.png" alt="arrowD" style="margin-bottom: -160px; margin-top: 180px;"  height="20" >
-                    </a>
-                    
-                </div>
-                
-                !
-                
-                
-                <div class="carousel-caption col-lg-3 col-md-4 col-sm-6 col-lg-offset-1 cuadro" style="position: absolute; left: 50px; top: 120px;">
-                    <div class="" style="background: #d58512; height: 200px;" >
-                    
-                        <h2 style="color: white; font-family: AguaFina; font-size: 1.5em; padding-bottom: 20px; padding-top: 50px; font-weight: bold; ">
-                            TALLAS ESPECIALES
-                        </h2>
-                        <h3 style="color: white; font-family: Elsie ; font-size: 1.2em; font-weight: 200; ">                        
-                            Zapatos para mujeres, tenemos todas las tallas
-                        </h3>
-                        
-                   
-                    </div>
-                    
-                </div>
-                !
-            </div>
-            
-            <div class="item">
-                 Set the second background image using inline CSS below. 
-                <div class="fill" style="background-image:url('img/zapato1.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2></h2>
-                </div>
-            </div>
-            
-            <div class="item">
-                 Set the third background image using inline CSS below. 
-                <div class="fill"
-                     style="background-image:url('img/zapato5.jpg'); background-position-y: 00px;">
-                    
-                </div>
-                <div class="carousel-caption">
-                    <h2></h2>
-                </div>
-            </div>
-        </div>    
-        
-
-         Controls 
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>       
-
-    </header>-->
-
-<!-- Sección columnas !-->
-
-<section style="background:  #ff66ff; padding: 40px 0px; margin-bottom: -20px;">
+    <section style="background:  #ff66ff; padding: 40px 0px; margin-bottom: -20px;">
 
     <div style="" class="container" >
         
